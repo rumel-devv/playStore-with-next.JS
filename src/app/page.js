@@ -1,0 +1,10 @@
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <div>
+       <h1 className="text-3xl">Project Next.Js Starting </h1>
+       <button className="btn btn-active">Hello</button>
+    </div>
+  );
+}
