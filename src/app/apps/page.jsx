@@ -1,9 +1,11 @@
+import TrendingApps from '@/components/homePage/TrendingApps';
 import React from 'react';
 
-const AppsPage = () => {
+const AppsPage = async () => {
+    
     return (
         <div>
-            <h1>Homepage</h1>
+            <TrendingApps from='apps'></TrendingApps>
         </div>
     );
 };

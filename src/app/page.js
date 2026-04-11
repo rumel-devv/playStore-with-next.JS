@@ -1,10 +1,14 @@
-import Image from "next/image";
+import Banner from "@/components/homePage/Banner";
+import Stats from "@/components/homePage/Stats";
+import TrendingApps from "@/components/homePage/TrendingApps";
+
 
 export default function Home() {
   return (
     <div>
-       <h1 className="text-3xl">Project Next.Js Starting </h1>
-       <button className="btn btn-active">Hello</button>
+       <Banner></Banner>
+       <Stats></Stats>
+       <TrendingApps from='homepage' ></TrendingApps>
     </div>
   );
 }

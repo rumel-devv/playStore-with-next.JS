@@ -4,8 +4,14 @@ import logo from '../assets/images/logo.png'
 import { RiLoginCircleFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Image from 'next/image';
+import MyLink from './MyLink';
 
-
+const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'Apps', href: '/apps' },
+    { name: 'Instalation ', href: '/instalation' },
+    { name: 'Dashboard', href: '/dashboard' }  
+  ];
 
 const Navbar = () => {
     return (
@@ -19,18 +25,13 @@ const Navbar = () => {
            </div>
 
          <ul className='md:flex justify-between gap-3 text-md font-semibold uppercase hidden '>
-            <li>
-                <Link href='/' > Home </Link>
-            </li>
-            <li>
-                <Link href='/apps' > Apps </Link>
-            </li>
-            <li>
-                <Link href='/instalation' > Instalation </Link>
-            </li>
-            <li>
-                <Link href='Dashboard' > Dashboard </Link>
-            </li>
+           
+           {navLinks.map((link,index) => (
+         <MyLink key={index} href={link.href}>
+           {link.name}
+           </MyLink>
+             ))}
+            
         </ul> 
         <button className='flex gap-1.5 items-center justify-center bg-purple-600 text-[15px] btn text-white'> <RiLoginCircleFill /> Login</button>
      </div>
