@@ -16,6 +16,7 @@ const UseApps = () => {
          fetchData()
        },[])
     return {apps,loading};
+    
 };
 
 export default UseApps;

@@ -9,6 +9,7 @@ const TrendingApps = ({from}) => {
 console.log(from);
   const {apps,loading} = UseApps()
 
+
     return (
         <div className='w-full md:w-10/12 mx-auto my-10 text-center'>
            <h2 className='text-3xl font-bold mb-3'>{from === 'homepage' ? "Trending Apps" : "Apps"}</h2>
