@@ -47,7 +47,7 @@ const AppdtlsPage = async ({ params }) => {
 
             {/* Stats */}
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-               <InstalLBtn></InstalLBtn>
+               <InstalLBtn expectedApps={expectedApps} ></InstalLBtn>
                 <button className="btn text-black-600">
                     📥 {expectedApps.downloads}
                 </button>
