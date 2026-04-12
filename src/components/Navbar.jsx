@@ -10,7 +10,8 @@ const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Apps', href: '/apps' },
     { name: 'Instalation ', href: '/instalation' },
-    { name: 'Dashboard', href: '/dashboard' }  
+    { name: 'Dashboard', href: '/dashboard' } ,
+    {name: "Carasol",href:'/carasol' } 
   ];
 
 const Navbar = () => {
