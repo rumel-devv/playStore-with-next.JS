@@ -1,3 +1,4 @@
+import MagnetButton from "@/components/nurui/magnet-button";
 import {
   Carousel,
   CarouselContent,
@@ -31,6 +32,7 @@ const Page = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+      <MagnetButton></MagnetButton>
     </div>
   );
 };
